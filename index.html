@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outer-container">
+        <form action="information.html">
+            <h2>Student Details Form</h2>
+            
+            <div class="form-group">
+                <label for="profilePicture">Profile Picture:</label>
+                <input type="file" id="profilePicture" name="profilePicture">
+            </div>
+
+            <div class="form-group">
+                <label for="firstName">First Name<span class="required">*</span>:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="middleName">Middle Name:</label>
+                <input type="text" id="middleName" name="middleName">
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name<span class="required">*</span>:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fatherName">Father's Name<span class="required">*</span>:</label>
+                <input type="text" id="fatherName" name="fatherName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="motherName">Mother's Name<span class="required">*</span>:</label>
+                <input type="text" id="motherName" name="motherName" required>
+            </div>
+
+            <div class="form-group">
+                <label>Gender<span class="required">*</span>:</label>
+                <div class="radio-group">
+                    <label for="male">
+                        <input type="radio" id="male" name="gender" value="Male" required> Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" name="gender" value="Female"> Female
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth<span class="required">*</span>:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bloodGroup">Blood Group:</label>
+                <select id="bloodGroup" name="bloodGroup">
+                    <option value="">Select</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" cols="50"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Qualification:</label>
+                <div class="checkbox-group">
+                    <label for="qualification10">
+                        <input type="checkbox" id="qualification10" name="qualification" value="10th"> 10<sup>th</sup>
+                    </label>
+                    <label for="qualification12">
+                        <input type="checkbox" id="qualification12" name="qualification" value="12th"> 12<sup>th</sup>
+                    </label>
+                    <label for="graduation">
+                        <input type="checkbox" id="graduation" name="qualification" value="Graduation"> Graduation
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Mobile No.<span class="required">*</span>:</label>
+                <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}" placeholder="Enter 10-digit mobile number">
+            </div>
+
+            <div class="form-group">
+                <label for="type">Type:</label>
+                <input type="text" id="type" name="type" value="Student" readonly>
+            </div>
+
+            <div class="button-group">
+                <input type="submit" value="Submit" class="btn">
+                <input type="reset" value="Reset" class="btn reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
